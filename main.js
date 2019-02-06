@@ -114,6 +114,9 @@ window.onload = function() {
   paddle.x = canvas.width / 2 - paddle.width / 2;
   paddle.y = canvas.height * 0.9 - paddle.height / 2;
   intervalId = setInterval(() => {
+    if(score === 10){
+      window.location = "https://n8python.github.io/nico-gram/"
+    }
     ctx.fillStyle = "Black";
     ctx.fillRect(0, 0, canvas.width, canvas.height)
     if (gameState === "start") {
